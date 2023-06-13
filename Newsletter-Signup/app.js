@@ -7,7 +7,7 @@
 const express = require('express');
 const app = express();
 const bodyParser = require('body-parser');
-const PORT = 3000;
+const L_PORT = 3000;
 // const request = require("request");
 const https = require('https');
 const API_KEY = "0e7d507038e5b90893f93e35904a058f-us9";
@@ -15,7 +15,7 @@ const audianceID = "41898899ff";
  
 app.use(express.static("public"));
  
-app.listen(PORT, (req, res) => {
+app.listen(process.env.PORT || L_PORT, (req, res) => {
     console.log("App is listening on Port : ", PORT);
 })
 
