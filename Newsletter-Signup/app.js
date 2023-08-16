@@ -2,7 +2,7 @@
 // mailchimp Key 
 // 0e7d507038e5b90893f93e35904a058f-us9
 // list id
-// 41898899ff should be correct
+// 41898899ff
 
 const express = require('express');
 const app = express();
